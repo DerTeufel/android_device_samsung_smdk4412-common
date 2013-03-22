@@ -4,7 +4,6 @@ system/bin/bcm4334_murata.hcd
 system/bin/bcm4334_semcosh.hcd
 system/bin/bintvoutservice
 system/bin/gps.cer
-system/bin/hostapd
 system/bin/lpmkey
 system/bin/playlpm
 system/cameradata/datapattern_420sp.yuv
@@ -82,6 +81,12 @@ system/usr/idc/melfas_ts.idc
 system/usr/idc/sec_touchscreen.idc
 system/usr/keylayout/gpio-keys.kl
 system/usr/keylayout/sii9234_rcp.kl
+system/vendor/firmware/SlimISP_GD.bin
+system/vendor/firmware/SlimISP_GH.bin
+system/vendor/firmware/SlimISP_GK.bin
+system/vendor/firmware/SlimISP_ZD.bin
+system/vendor/firmware/SlimISP_ZH.bin
+system/vendor/firmware/SlimISP_ZK.bin
 system/vendor/firmware/fimc_is_fw.bin
 system/vendor/firmware/mfc_fw.bin
 system/vendor/firmware/setfile.bin
