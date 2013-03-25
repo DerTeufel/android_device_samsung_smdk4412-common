@@ -33,6 +33,11 @@ PRODUCT_COPY_FILES := \
     $(COMMON_PATH)/ueventd.smdk4x12.rc:root/ueventd.smdk4x12.rc \
     $(COMMON_PATH)/ueventd.smdk4x12.rc:recovery/root/ueventd.smdk4x12.rc
 
+# Recovery filemanager
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/aroma/aromafm.zip:recovery/root/tmp/clockworkmod/.aromafm/aromafm.zip \
+    $(COMMON_PATH)/aroma/aromafm.zip.cfg:recovery/root/tmp/clockworkmod/.aromafm/aromafm.zip.cfg
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf \
