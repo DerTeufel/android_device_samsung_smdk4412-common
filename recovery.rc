@@ -25,6 +25,8 @@ on boot
     hostname localhost
     domainname localdomain
 
+    setprop ro.cwm.enable_key_repeat true
+
     class_start default
 
 service ueventd /sbin/ueventd
