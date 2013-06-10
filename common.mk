@@ -147,6 +147,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
+# Ubuntu
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ubuntu/ubuntu.sh:root/sbin/ubuntu.sh \
+    $(LOCAL_PATH)/ubuntu/Shell.qml:system/Shell.qml
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
     hwui.render_dirty_regions=false
