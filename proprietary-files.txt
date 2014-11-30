@@ -21,14 +21,6 @@ system/etc/wifi/nvram_net.txt_semcosh
 system/lib/egl/libEGL_mali.so
 system/lib/egl/libGLESv1_CM_mali.so
 system/lib/egl/libGLESv2_mali.so
-system/lib/libaudiosa.so
-system/lib/libcec.so
-system/lib/libddc.so
-system/lib/libedid.so
-system/lib/libfimc.so
-system/lib/libfimg.so
-system/lib/libhwconverter.so
-system/lib/libhwjpeg.so
 system/lib/libMali.so
 system/lib/libMcClient.so
 system/lib/libMcRegistry.so
@@ -36,8 +28,6 @@ system/lib/libMcVersion.so
 system/lib/libQmageDecoder.so
 system/lib/libquramimagecodec.so
 system/lib/libsecnativefeature.so
-system/lib/libUMP.so
-system/lib/libvdis.so
 system/media/battery_batteryerror.qmg
 system/media/battery_charging_100.qmg
 system/media/battery_charging_10.qmg
@@ -80,8 +70,6 @@ system/vendor/firmware/SlimISP_ZH.bin
 system/vendor/firmware/SlimISP_ZK.bin
 system/vendor/firmware/SlimISP_ZM.bin
 system/vendor/lib/drm/libdrmwvmplugin.so
-system/vendor/lib/liblvverx.so
-system/vendor/lib/liblvvetx.so
 system/vendor/lib/libwvdrm_L1.so
 system/vendor/lib/libwvm.so
 system/vendor/lib/libWVStreamControlAPI_L1.so
