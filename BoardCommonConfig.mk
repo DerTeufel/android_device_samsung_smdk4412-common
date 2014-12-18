@@ -75,7 +75,7 @@ BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 BOARD_EGL_CFG := device/samsung/smdk4412-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 BOARD_USES_SKIAHWJPEG := true
-COMMON_GLOBAL_CFLAGS += -DSEC_HWJPEG_G2D -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
+COMMON_GLOBAL_CFLAGS += -DSEC_HWJPEG_G2D -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508 -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # FIMG Acceleration
@@ -111,6 +111,8 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Logging
 TARGET_USES_LOGD := false
+
+BOARD_USES_LEGACY_MMAP := true
 
 # RIL
 BOARD_MOBILEDATA_INTERFACE_NAME := "pdp0"
@@ -159,6 +161,12 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 
 # Override healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.exynos4
+
+# Healthd Charger
+RED_LED_PATH := /sys/class/leds/led_r/brightness
+GREEN_LED_PATH := /sys/class/leds/led_g/brightness
+BLUE_LED_PATH := /sys/class/leds/led_b/brightness
+BACKLIGHT_PATH := /sys/class/backlight/panel/brightness
 
 # inherit from the proprietary version
 -include vendor/samsung/smdk4412-common/BoardConfigVendor.mk
